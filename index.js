@@ -22,9 +22,8 @@ function isPalindrome(word){
 }
 function calculateDiscountedPrice(originalPrice,discountPercentage){
    const discountAmount = originalPrice * (discountPercentage / 100);
-    return originalPrice-discountAmount;
+    return originalPrice - discountAmount;
 }
-
 
 // This is required for the test to function properly  
 module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
