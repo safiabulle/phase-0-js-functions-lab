@@ -1,55 +1,78 @@
-**Lab: Functions in JavaScript**
+**Author:** Safia jamal bulle
 
-**Estimate Completed Time:** 30-60 minutes
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Pages Overview](#pages-overview)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-**Overview:**
-You are working as a junior developer at a company that builds tools for managing personal budgets. Your task is to create a set of basic functions to perform common calculations related to budgeting. This lab will help you practice defining and using functions in JavaScript.
+## installation
 
-**Tools and Resources:**
-- VSCode
-- GitHub repository https://github.com/learn-co-curriculum/phase-0-js-functions-lab.git
-- Refer to previous lessons on JavaScript functions if needed
+Follow these steps to run the project locally:
 
-**Instructions:**
+Clone the repository:
+git clone git@github.com:safiabulle/phase-0-js-functions-lab.git
+Navigate into the project folder:
+cd yourproject
+Install dependencies:
+npm install jest --save-dev
 
-1. **Fork and Clone the Repository:**
-   - Fork the provided GitHub repository to your own account.
-   - Clone your forked repository to your local machine.
+## Usage
 
-2. **Navigate to the Project Directory:**
-   - Open a terminal and navigate to the project directory where you cloned the repository.
+To run the project:
+node index.js
 
-3. **Create Functions:**
-   - **Function 1: `calculateTax`**
-     - Create a function named `calculateTax` that takes a single parameter, `amount`, representing a monetary value.
-     - The function should calculate a 10% tax on the amount and return the tax value.
+To run tests:
+npm test
 
-   - **Function 2: `convertToUpperCase`**
-     - Create a function named `convertToUpperCase` that takes a single parameter, `text`, which is a string.
-     - The function should convert the string to uppercase and return the result.
+## Features
 
-   - **Function 3: `findMaximum`**
-     - Create a function named `findMaximum` that takes two parameters, `num1` and `num2`, which are numbers.
-     - The function should return the larger of the two numbers.
+This project includes several JavaScript utility functions:
 
-   - **Function 4: `isPalindrome`**
-     - Create a function named `isPalindrome` that takes a single parameter, `word`, which is a string.
-     - The function should return `true` if the string is a palindrome (reads the same forward and backward), and `false` otherwise.
+Tax Calculation – Calculates 10% tax based on a given amount
+Text Conversion – Converts any string to uppercase
+Maximum Finder – Returns the greater of two numbers
+Palindrome Checker – Checks whether a word reads the same forwards and backwards
+Discount Calculator – Calculates the final price after applying a percentage discount
 
-   - **Function 5: `calculateDiscountedPrice`**
-     - Create a function named `calculateDiscountedPrice` that takes two parameters: `originalPrice` and `discountPercentage`.
-     - The function should calculate and return the price after applying the discount. For example, if `originalPrice` is $100 and `discountPercentage` is 20, the function should return $80.
+Each function is tested using Jest to ensure correctness and reliability.
 
-4. **Test Your Functions:**
-   - Run the tests provided in the repository to ensure your functions work as expected. The tests will check the correctness of your implementations.
+## Pages Overview
+This project does not include multiple pages or a user interface.
+It is a backend-focused JavaScript lab that demonstrates:
 
-5. **Submit Your Work:**
-   - Once your functions are implemented and pass all tests, commit your changes and push them to your forked repository on GitHub.
+Writing reusable functions
+Exporting functions using module.exports
+Writing and running unit tests with Jest
 
-**Submission and Grading Criteria:**
+Main files:
 
-- **Submission Format:** Submit a link to your GitHub repository.
-- **Grading Criteria:**
-  - Correct implementation of each function (`calculateTax`, `convertToUpperCase`, `findMaximum`, `isPalindrome`, and `calculateDiscountedPrice`).
-  - Functions should handle typical input values correctly.
-  - Code should be clean and follow JavaScript conventions.
+index.js → Contains all the functions
+index.test.js → Contains test cases for each function
+
+## Technologies Used
+- JavaScript (Node.js)
+- Jest (Testing Framework)
+
+
+## Contributing
+
+Contributions are welcome!
+
+Fork the repository
+Create a new branch:
+git checkout -b feature-name
+Make your changes
+Push your branch:
+git push origin feature-name
+Open a pull request
+
+## License
+
+This project currently does not have a license.
+
+
+
